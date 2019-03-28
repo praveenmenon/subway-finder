@@ -1,0 +1,16 @@
+.slate-background{
+	background-color: #F8F9FA;
+    overflow-y: scroll;
+    height: 40em;
+}
+
+.search-container {
+	margin-top: 5%;
+}
+
+.raw-section {
+	background-color: #F8F9FA;
+    overflow-y: scroll;
+    height: 23em;
+    margin-top: 1em;
+}
