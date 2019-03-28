@@ -4,15 +4,15 @@
 
 ### Basic Usage
 
-Run the index.html file in the root folder on default browser. The form consists of two fields. lattitude and Longitude. Enter a valid lattitude anbd longitude and submit the form. On submission of form, the algorithm calculates the closest 5 subways from the given cordinates inside NewYork City. 
+Run the index.html file in the root folder on default browser. The form consists of two fields, Latitude and Longitude. Enter a valid latitude and longitude and submit the form. On submission of the form, the algorithm calculates the closest 5 subways from the given cordinates inside New York City. 
 
-### Advanced Usage
+### Functionality
 
-The core logic is written inside the javascript/script.js file. The javacript file takes teh data from teh form using jquery form submiut and call the fetchSubways javascript function. 
+The core logic is written inside the javascript/script.js file. The javacript file takes the data from html form using jquery (form submit) and calls the fetchSubways javascript function. 
 * This javascript function calls the https://data.cityofnewyork.us API to fetch all subway coordinates. 
-* It calls the calculateDistance function to fetch the distance between the given source and destination. The calculateDistance returns distance in kellometer. 
+* It calls the calculateDistance function to fetch the distance between the given source and destination. The calculateDistance returns distance in killometers. 
 * The fetchSubways function also calculates and sorts the subways in ascending order of distance calculated.
-* Once the distances and sorted, it calls the displaydata function to display the top 5 subways in raw and pretty format
+* Once the distances are sorted, it calls the displaydata function to display the top 5 subways in raw and pretty format.
 
 ## Bugs and Issues
 
@@ -21,5 +21,5 @@ The core logic is written inside the javascript/script.js file. The javacript fi
 
 ## Enhancement
 
-* data.cityofnewyork provides query option to tweek the API response. The option could be used to increase the time complexity of the function.
-* Google maps can be added to the page to proviude details of subway on map with actuall distance by road.
+* data.cityofnewyork provides query option to tweek the API response. This option could be used to improve the time complexity of the function.
+* Google maps can be added to the page to provide details of subway on map with actuall distance by road.
