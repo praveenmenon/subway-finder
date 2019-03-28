@@ -75,6 +75,7 @@ function displaydata(sorted_distance, map) {
     const subwayLat = parseFloat(sub[11].match(/[^\(\}]+(?=\))/)[0].split(" ")[1]); 
     const subwayLong = parseFloat(sub[11].match(/[^\(\}]+(?=\))/)[0].split(" ")[0]);
 
+    // Adds the API data to the right container in pretty format
     longitude_ele.textContent = `Longitude: ${parseFloat(sub[11].match(/[^\(\}]+(?=\))/)[0].split(" ")[0])}`;
     latitude_ele.textContent = `Latitude: ${parseFloat(sub[11].match(/[^\(\}]+(?=\))/)[0].split(" ")[1])}`;
     distance_ele.textContent = `Distance: ${sorted_distance[i]}`;
@@ -91,6 +92,7 @@ function displaydata(sorted_distance, map) {
     address.appendChild(breakline);
     address.appendChild(distance_ele);
 
+    // updates teh data in the left section of the website in raw format
     jsoncontainer.appendChild(jsonSection);
     jsonSection.appendChild(pre_ele);
 
